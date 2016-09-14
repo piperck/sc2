@@ -18,5 +18,5 @@ def produce_a_scv(seconds=12):
 
 
 if '__main__' == __name__:
-    produce_a_viking()
+    # produce_a_viking()
     produce_a_scv()

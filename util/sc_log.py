@@ -15,7 +15,6 @@ def gen_sc2_building_handler(error=False):
         name = "{0}info.log-{1}".format(path_prefix, datetime.date.today())
         sc2_building_handler = logging.FileHandler(filename=name)
         sc2_building_handler.setLevel(level=logging.INFO)
-        sc2_building_handler.addFilter(logging.Filter("INFO"))
 
     formatter = logging.Formatter(str_format, date_fmt)
     sc2_building_handler.setFormatter(formatter)
